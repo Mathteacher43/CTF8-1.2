@@ -1,84 +1,360 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow Realm</title>
-    <style>
-        body {
-            background: #000;
-            color: #0f0;
-            font-family: 'Courier New', monospace;
-            text-align: center;
-            padding: 60px 20px;
-            line-height: 1.6;
+// Ultimate Obfuscation Challenge
+// Answer: NzM3OTZlNzQ3YjU3Njg2MTMwNzI3NTZjMzY2ODM1NjE3ZA==
+
+(function(_0x4d8f) {
+    var _0x2e1c = function(_0x3a5b) {
+        while (--_0x3a5b) {
+            _0x4d8f['push'](_0x4d8f['shift']());
         }
-        h1 { color: #f00; text-shadow: 0 0 15px #f00; }
-        #hint { font-size: 1.3em; margin: 40px 0; }
-        #hidden { display: none; background: #111; padding: 20px; border: 1px solid #444; max-width: 600px; margin: 30px auto; }
-        form { margin: 40px 0; }
-        input {
-            background: #222;
-            color: #0f0;
-            border: 1px solid #0f0;
-            padding: 12px;
-            font-family: inherit;
-            width: 280px;
-            max-width: 90%;
+    };
+    var _0x1f9d = function() {
+        var _0x5c2a = {
+            'data': {
+                'key': 'cookie',
+                'value': 'timeout'
+            },
+            'setCookie': function(_0x1a2b, _0x3c4d, _0x5e6f, _0x7g8h) {
+                _0x7g8h = _0x7g8h || {};
+                var _0x9i0j = _0x3c4d + '=' + _0x5e6f;
+                var _0x1k2l = 0x0;
+                for (var _0x3m4n = 0x0, _0x5o6p = _0x1a2b['length']; _0x3m4n < _0x5o6p; _0x3m4n++) {
+                    var _0x7q8r = _0x1a2b[_0x3m4n];
+                    _0x9i0j += ';\x20' + _0x7q8r;
+                    var _0x9s0t = _0x1a2b[_0x7q8r];
+                    _0x1a2b['push'](_0x9s0t);
+                    _0x5o6p = _0x1a2b['length'];
+                    if (_0x9s0t !== !![]) {
+                        _0x9i0j += '=' + _0x9s0t;
+                    }
+                }
+                _0x7g8h['cookie'] = _0x9i0j;
+            },
+            'removeCookie': function() {
+                return 'dev';
+            },
+            'getCookie': function(_0x1u2v, _0x3w4x) {
+                _0x1u2v = _0x1u2v || function(_0x5y6z) {
+                    return _0x5y6z;
+                };
+                var _0x7a8b = _0x1u2v(new RegExp('(?:^|;\x20)' + _0x3w4x['replace'](/([.$?*|{}()[]\/+^])/g, '$1') + '=([^;]*)'));
+                var _0x9c0d = function(_0x1e2f, _0x3g4h) {
+                    _0x1e2f(++_0x3g4h);
+                };
+                _0x9c0d(_0x2e1c, _0x4d8f);
+                return _0x7a8b ? decodeURIComponent(_0x7a8b[0x1]) : undefined;
+            }
+        };
+        var _0x5i6j = function() {
+            var _0x7k8l = new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');
+            return _0x7k8l['test'](_0x5c2a['removeCookie']['toString']());
+        };
+        _0x5i6j();
+        return _0x5c2a;
+    };
+    var _0x3m9n = _0x1f9d();
+    _0x2e1c(++_0x4d8f);
+}(_0x8p1q = [
+    '\x4e\x7a\x4d\x33\x4f\x54\x5a\x6c', '\x4e\x7a\x51\x33\x59\x6a\x55\x33',
+    '\x4e\x6a\x67\x32\x4d\x54\x4d\x77', '\x4e\x7a\x49\x33\x4e\x54\x5a\x6a',
+    '\x4d\x7a\x59\x32\x4f\x44\x4d\x31', '\x4e\x6a\x45\x33\x5a\x41\x3d\x3d'
+]));
+
+var _0xGlobalConfig = (function() {
+    var _0xAntiDebug = !![]; 
+    return function(_0xTarget, _0xCallback) {
+        var _0xExecutor = _0xAntiDebug ? function() {
+            if (_0xCallback) {
+                var _0xResult = _0xCallback['apply'](_0xTarget, arguments);
+                _0xCallback = null;
+                return _0xResult;
+            }
+        } : function() {};
+        _0xAntiDebug = ![];
+        return _0xExecutor;
+    };
+}());
+
+var _0xProtector = _0xGlobalConfig(this, function() {
+    var _0xConsoleTest = function() {
+        var _0xRegTest;
+        try {
+            _0xRegTest = Function('return\x20(function()\x20' + '{}.constructor(\x22return\x20this\x22)(\x20)' + ');')();
+        } catch (_0xException) {
+            _0xRegTest = window;
         }
-        button {
-            background: #0f0;
-            color: #000;
-            border: none;
-            padding: 12px 24px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body onload="setSecretCookie()">
+        return _0xRegTest;
+    };
+    var _0xConsoleRef = _0xConsoleTest();
+    var _0xConsoleLog = _0xConsoleRef['console'] = _0xConsoleRef['console'] || {};
+    var _0xMethods = ['log', 'warn', 'info', 'error', 'exception', 'table', 'trace'];
+    for (var _0xIndex = 0x0; _0xIndex < _0xMethods['length']; _0xIndex++) {
+        var _0xConstructor = _0xGlobalConfig['constructor']['prototype']['bind'](_0xGlobalConfig);
+        var _0xMethodName = _0xMethods[_0xIndex];
+        var _0xOriginalMethod = _0xConsoleLog[_0xMethodName] || _0xConstructor;
+        _0xConstructor['__proto__'] = _0xGlobalConfig['bind'](_0xGlobalConfig);
+        _0xConstructor['toString'] = _0xOriginalMethod['toString']['bind'](_0xOriginalMethod);
+        _0xConsoleLog[_0xMethodName] = _0xConstructor;
+    }
+});
 
-    <h1>이제 그림자 속에 있다</h1>
+_0xProtector();
 
-    <div id="hint">
-        그림자가 속삭인다:<br>
-        <span id="encoded">NzM3OTZlNzQ3Y</span><br>
-        (아직 시작도 안했다)
-    </div>
-
-    <form id="shadowForm" onsubmit="checkShadow(event)">
-        <input type="text" id="shadowInput" placeholder="그림자의 암호를 말해라..." autocomplete="off">
-        <button type="submit">속삭이기</button>
-    </form>
-
-    <div id="hidden">
-        <p>..이제 진짜를 볼 자격이 생겼군.</p>
-        <p>하지만 진짜 비밀은 눈에 보이지 않는 곳에 있다.</p>
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
-             alt="NzM3OTZlNzQ3YjU3Njg2MTMwNzI3NTZjMzY2ODM1NjE3ZA==" 
-             width="1" height="1" style="display:none;">
-    </div>
-
-    <script>
-        function setSecretCookie() {
-            // 
-            document.cookie = "shadow_part=NzM3OTZlNzQ3YjU3Njg2MTMwNzI3NTZjMzY2ODM1NjE3ZA==; path=/";
-        }
-
-        function checkShadow(e) {
-            e.preventDefault();
-            const val = document.getElementById("shadowInput").value.trim().toLowerCase();
-            if (val === "shadow" || val === "그림자") {
-                document.getElementById("hidden").style.display = "block";
-                alert("이제부터는 너가하거라");
-            } else {
-                alert("...아직 멀었군.");
+(function() {
+    var _0xVMEngine = {
+        '_stack': [],
+        '_registers': new Array(8)['fill'](0x0),
+        '_memory': new Uint8Array(1024),
+        '_flags': {
+            'zero': false,
+            'carry': false,
+            'overflow': false,
+            'negative': false
+        },
+        '_instructionPointer': 0x0,
+        
+        '_opcodes': {
+            'PUSH_CHAR': 0x01,
+            'PUSH_REG': 0x02,
+            'POP_REG': 0x03,
+            'ADD': 0x04,
+            'SUB': 0x05,
+            'XOR': 0x06,
+            'CONCAT': 0x07,
+            'JMP': 0x08,
+            'JZ': 0x09,
+            'JNZ': 0x0A,
+            'CALL': 0x0B,
+            'RET': 0x0C,
+            'NOP': 0x0D,
+            'HALT': 0xFF
+        },
+        
+        '_program': [
+            // Layer 1: Push encrypted chars with dummy operations
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x7a, 0x0D, 0x01, 0x4d, 0x0D, 0x01, 0x33, 0x0D,
+            0x01, 0x4f, 0x0D, 0x01, 0x54, 0x0D, 0x01, 0x5a, 0x0D, 0x01, 0x6c, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x7a, 0x0D, 0x01, 0x51, 0x0D, 0x01, 0x33, 0x0D,
+            0x01, 0x59, 0x0D, 0x01, 0x6a, 0x0D, 0x01, 0x55, 0x0D, 0x01, 0x33, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x6a, 0x0D, 0x01, 0x67, 0x0D, 0x01, 0x32, 0x0D,
+            0x01, 0x4d, 0x0D, 0x01, 0x54, 0x0D, 0x01, 0x4d, 0x0D, 0x01, 0x77, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x7a, 0x0D, 0x01, 0x49, 0x0D, 0x01, 0x33, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x54, 0x0D, 0x01, 0x5a, 0x0D, 0x01, 0x6a, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4d, 0x0D, 0x01, 0x7a, 0x0D, 0x01, 0x59, 0x0D, 0x01, 0x32, 0x0D,
+            0x01, 0x4f, 0x0D, 0x01, 0x44, 0x0D, 0x01, 0x4d, 0x0D, 0x01, 0x31, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0x01, 0x4e, 0x0D, 0x01, 0x6a, 0x0D, 0x01, 0x45, 0x0D, 0x01, 0x33, 0x0D,
+            0x01, 0x5a, 0x0D, 0x01, 0x41, 0x0D, 0x01, 0x3d, 0x0D, 0x01, 0x3d, 0x0D,
+            0x0D, 0x0D, 0x0D,
+            0xFF
+        ],
+        
+        '_execute': function() {
+            var _0xAntiTamper = (function() {
+                var _0xChecksum = 0x0;
+                return function(_0xValidate) {
+                    if (_0xValidate) {
+                        for (var i = 0; i < this['_program']['length']; i++) {
+                            _0xChecksum ^= this['_program'][i];
+                        }
+                        return _0xChecksum === 0x0;
+                    }
+                    return true;
+                };
+            }['bind'](this))();
+            
+            while (this['_instructionPointer'] < this['_program']['length']) {
+                var _0xCurrentOp = this['_program'][this['_instructionPointer']++];
+                
+                // Anti-debugging junk code
+                if (Math['random']() > 0.999999) {
+                    debugger;
+                }
+                
+                // Timing check
+                var _0xStartTime = new Date()['getTime']();
+                
+                switch (_0xCurrentOp) {
+                    case this['_opcodes']['PUSH_CHAR']:
+                        var _0xChar = this['_program'][this['_instructionPointer']++];
+                        this['_stack']['push'](String['fromCharCode'](_0xChar));
+                        break;
+                        
+                    case this['_opcodes']['NOP']:
+                        // Intentional waste of cycles
+                        for (var _0xWaste = 0; _0xWaste < 100; _0xWaste++) {
+                            this['_registers'][0] = Math['sin'](_0xWaste) * Math['cos'](_0xWaste);
+                        }
+                        break;
+                        
+                    case this['_opcodes']['HALT']:
+                        var _0xOutput = this['_stack']['join']('');
+                        console['log'](_0xOutput);
+                        return _0xOutput;
+                        
+                    default:
+                        break;
+                }
+                
+                // More timing checks
+                var _0xEndTime = new Date()['getTime']();
+                if (_0xEndTime - _0xStartTime > 1000) {
+                    // Debugger detected, exit
+                    return;
+                }
+            }
+        },
+        
+        '_init': function() {
+            // Control flow flattening
+            var _0xFlowStates = ['init', 'validate', 'setup', 'execute', 'cleanup'];
+            var _0xCurrentState = 0;
+            var _0xStateMap = {
+                'init': 0,
+                'validate': 1,
+                'setup': 2,
+                'execute': 3,
+                'cleanup': 4
+            };
+            
+            while (_0xCurrentState < _0xFlowStates['length']) {
+                switch (_0xFlowStates[_0xCurrentState]) {
+                    case 'init':
+                        this['_instructionPointer'] = 0x0;
+                        _0xCurrentState++;
+                        break;
+                    case 'validate':
+                        if (typeof window === 'undefined') return;
+                        _0xCurrentState++;
+                        break;
+                    case 'setup':
+                        this['_stack'] = [];
+                        _0xCurrentState++;
+                        break;
+                    case 'execute':
+                        this['_execute']();
+                        _0xCurrentState++;
+                        break;
+                    case 'cleanup':
+                        _0xCurrentState++;
+                        break;
+                }
             }
         }
+    };
+    
+    // Polymorphic code generator
+    var _0xPolymorphic = (function() {
+        var _0xSeed = 0x12345678;
+        return {
+            'mutate': function(_0xInput) {
+                _0xSeed = (_0xSeed * 1103515245 + 12345) & 0x7fffffff;
+                return _0xInput ^ (_0xSeed & 0xFF);
+            },
+            'restore': function(_0xInput) {
+                return _0xInput ^ (_0xSeed & 0xFF);
+            }
+        };
+    })();
+    
+    // String encoding layers
+    var _0xStringObfuscator = {
+        '_table': 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',
+        '_encodeCustom': function(_0xStr) {
+            var _0xOutput = [];
+            for (var i = 0; i < _0xStr['length']; i++) {
+                _0xOutput['push']((_0xStr['charCodeAt'](i) ^ 0xAA) + 0x20);
+            }
+            return _0xOutput;
+        },
+        '_decodeCustom': function(_0xArr) {
+            var _0xOutput = '';
+            for (var i = 0; i < _0xArr['length']; i++) {
+                _0xOutput += String['fromCharCode']((_0xArr[i] - 0x20) ^ 0xAA);
+            }
+            return _0xOutput;
+        }
+    };
+    
+    // Dead code injection
+    var _0xDeadCodePool = [];
+    for (var _0xDeadIdx = 0; _0xDeadIdx < 500; _0xDeadIdx++) {
+        _0xDeadCodePool['push']({
+            'id': _0xDeadIdx,
+            'value': Math['random']() * 0xFFFFFF,
+            'hash': function() {
+                return this['value'] ^ this['id'];
+            },
+            'transform': function(_0xInput) {
+                return (_0xInput * this['value']) % 0xFFFF;
+            }
+        });
+    }
+    
+    // Opaque predicates
+    var _0xOpaquePredicates = {
+        'alwaysTrue': function() {
+            return (Math['random']() * 2) | 0 >= 0;
+        },
+        'alwaysFalse': function() {
+            return (Math['random']() * 2) | 0 > 1;
+        },
+        'complex': function(_0xInput) {
+            var _0xTemp = _0xInput * 7 + 13;
+            return (_0xTemp % 2 === 0) ? (_0xTemp & 1) === 0 : (_0xTemp & 1) === 1;
+        }
+    };
+    
+    // Execution environment check
+    if (typeof window !== 'undefined' && window['document']) {
+        if (_0xOpaquePredicates['alwaysTrue']()) {
+            setTimeout(function() {
+                if (!_0xOpaquePredicates['alwaysFalse']()) {
+                    _0xVMEngine['_init']();
+                }
+            }, Math['random']() * 100);
+        }
+    }
+    
+    // Additional entropy
+    var _0xEntropyPool = new Uint8Array(256);
+    for (var _0xEntropyIdx = 0; _0xEntropyIdx < 256; _0xEntropyIdx++) {
+        _0xEntropyPool[_0xEntropyIdx] = (_0xEntropyIdx * 7 + 13) & 0xFF;
+    }
+    
+})();
 
-        // 힌트로 쓸 Base64 일부만 보이게 하고 나머지는 쿠키+alt에 숨김
-        document.getElementById("encoded").innerText = "NzM3OTZlNzQ3Y" + "...";
-    </script>
+// More junk code
+(function() {
+    var _0xJunkClass = function(_0xParam1, _0xParam2) {
+        this['prop1'] = _0xParam1;
+        this['prop2'] = _0xParam2;
+        this['method1'] = function() {
+            return this['prop1'] ^ this['prop2'];
+        };
+        this['method2'] = function() {
+            return this['prop1'] + this['prop2'];
+        };
+    };
+    
+    var _0xJunkInstances = [];
+    for (var i = 0; i < 200; i++) {
+        _0xJunkInstances['push'](new _0xJunkClass(
+            Math['floor'](Math['random']() * 0xFF),
+            Math['floor'](Math['random']() * 0xFF)
+        ));
+    }
+})();
 
-</body>
-</html>
+// Final layer of confusion
+var _0xFinalObfuscation = (function(_0xInput) {
+    return function(_0xKey) {
+        return _0xInput['map'](function(_0xChar) {
+            return String['fromCharCode'](_0xChar['charCodeAt'](0) ^ _0xKey);
+        })['join']('');
+    };
+}(['T', 'e', 's', 't']));
