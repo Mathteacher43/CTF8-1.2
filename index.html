@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Realm</title>
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 60px 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #f00; text-shadow: 0 0 15px #f00; }
+        #hint { font-size: 1.3em; margin: 40px 0; }
+        #hidden { display: none; background: #111; padding: 20px; border: 1px solid #444; max-width: 600px; margin: 30px auto; }
+        form { margin: 40px 0; }
+        input {
+            background: #222;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 12px;
+            font-family: inherit;
+            width: 280px;
+            max-width: 90%;
+        }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onload="setSecretCookie()">
+
+    <h1>이제 그림자 속에 있다</h1>
+
+    <div id="hint">
+        그림자가 속삭인다:<br>
+        <span id="encoded">NzM3OTZlNzQ3Y</span><br>
+        (아직 시작도 안했다)
+    </div>
+
+    <form id="shadowForm" onsubmit="checkShadow(event)">
+        <input type="text" id="shadowInput" placeholder="그림자의 암호를 말해라..." autocomplete="off">
+        <button type="submit">속삭이기</button>
+    </form>
+
+    <div id="hidden">
+        <p>..이제 진짜를 볼 자격이 생겼군.</p>
+        <p>하지만 진짜 비밀은 눈에 보이지 않는 곳에 있다.</p>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+             alt="NzM3OTZlNzQ3YjU3Njg2MTMwNzI3NTZjMzY2ODM1NjE3ZA==" 
+             width="1" height="1" style="display:none;">
+    </div>
+
+    <script>
+        function setSecretCookie() {
+            // 
+            document.cookie = "shadow_part=NzM3OTZlNzQ3YjU3Njg2MTMwNzI3NTZjMzY2ODM1NjE3ZA==; path=/";
+        }
+
+        function checkShadow(e) {
+            e.preventDefault();
+            const val = document.getElementById("shadowInput").value.trim().toLowerCase();
+            if (val === "shadow" || val === "그림자") {
+                document.getElementById("hidden").style.display = "block";
+                alert("이제부터는 너가하거라");
+            } else {
+                alert("...아직 멀었군.");
+            }
+        }
+
+        // 힌트로 쓸 Base64 일부만 보이게 하고 나머지는 쿠키+alt에 숨김
+        document.getElementById("encoded").innerText = "NzM3OTZlNzQ3Y" + "...";
+    </script>
+
+</body>
+</html>
