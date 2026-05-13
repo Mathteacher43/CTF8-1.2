@@ -1,0 +1,64 @@
+import * as React from "react";
+import { AlertCircle, FileSearch, ShieldAlert } from "lucide-react";
+
+export function FactCheckGuide() {
+  return (
+    <div className="flex flex-col gap-6">
+      <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+        <div className="bg-slate-50 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">주의 경보 (가짜뉴스 알림)</h3>
+          <span className="flex items-center text-[10px] text-red-600 font-bold bg-red-100 px-2 py-0.5 rounded">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-1 animate-pulse"></span>
+            실시간
+          </span>
+        </div>
+        <div className="p-0 overflow-y-auto">
+          <div className="divide-y divide-slate-100">
+            <div className="p-4 flex gap-4 bg-red-50/30">
+              <div className="w-8 h-8 rounded bg-red-100 flex items-center justify-center flex-shrink-0 text-red-500">
+                <AlertCircle className="w-4 h-4" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[13px] font-bold text-slate-800">유명인 사칭 투자 사기 주의</p>
+                <p className="text-[12px] text-slate-500 mt-1 leading-snug">
+                  유명 정치인이나 연예인을 사칭한 딥페이크 인터뷰 영상과 조작된 기사 화면을 이용한 투자 유도 사기가 급증하고 있습니다.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 flex gap-4">
+              <div className="w-8 h-8 rounded bg-slate-100 flex items-center justify-center flex-shrink-0 text-slate-500">
+                <ShieldAlert className="w-4 h-4" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[13px] font-bold text-slate-800">스미싱 문자 발송 빈발</p>
+                <p className="text-[12px] text-slate-500 mt-1 leading-snug">
+                  정부 지원금 신청이나 택배 배송 확인을 빙자한 URL 클릭 유도 문자가 기승을 부리고 있으니 URL 확인 전 반드시 검증하세요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+        <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4 flex items-center">
+          <FileSearch className="w-4 h-4 mr-1.5" /> 팩트체크 필수 팁
+        </h3>
+        <ul className="space-y-3 text-[12px] text-slate-600">
+          <li className="flex items-start">
+            <span className="text-indigo-500 font-bold mr-2">1.</span>
+            자극적인 제목일수록 본문 내용과 일치하는지 먼저 확인하세요.
+          </li>
+          <li className="flex items-start">
+            <span className="text-indigo-500 font-bold mr-2">2.</span>
+            이미지의 출처가 불분명하다면 '역이미지 검색'을 통해 과거 사진을 재활용했는지 확인합니다.
+          </li>
+          <li className="flex items-start">
+            <span className="text-indigo-500 font-bold mr-2">3.</span>
+            URL의 도메인이 공식 기관(go.kr, 언론사 공식 도메인 등)과 정확히 일치하는지 스펠링을 살펴보세요.
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
